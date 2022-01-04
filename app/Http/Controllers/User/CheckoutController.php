@@ -241,7 +241,7 @@ class CheckoutController extends Controller
         }
 
         $checkout->save();
-        return view('checkout/success');
+        return redirect(route('user.dashboard'));
     }    
     
     
