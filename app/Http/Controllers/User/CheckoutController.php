@@ -188,6 +188,8 @@ class CheckoutController extends Controller
             return false;
         }
 
+    }
+
     public function midtransCallback(Request $request)
     {
         $notif = new Midtrans\Notification();
@@ -239,5 +241,5 @@ class CheckoutController extends Controller
         return view('checkout/success');
     }    
     
-    }
+    
  }
